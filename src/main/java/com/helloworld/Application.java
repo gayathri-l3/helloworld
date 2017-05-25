@@ -14,7 +14,10 @@ public class Application extends SpringBootServletInitializer {
     }
 
     public static void main(String[] args) throws Exception {
-    	Bootstrapper.main(args);
+    	String[] str=new String[1];
+    	str[0]="restheart.yml";
+    
+    	Bootstrapper.main(str);
         SpringApplication.run(Application.class, args);
     }
 }
